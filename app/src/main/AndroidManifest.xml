@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Accordion">
         <activity
+            android:name=".modules.FrontActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.TestActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

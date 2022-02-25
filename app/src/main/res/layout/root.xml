@@ -9,7 +9,6 @@
     app:cardUseCompatPadding="true"
     android:background="@color/white">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,28 +16,40 @@
         android:orientation="vertical"
         android:padding="8dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Code Name"
+
+        <RadioButton
             android:id="@+id/code_name"
-            android:textSize="22sp"
-            android:padding="16dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:text="PostOffice Items"
+            />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/expanded_menu"
             android:visibility="visible">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+            <RadioGroup
                 android:id="@+id/content"
-                android:textSize="18sp"
-                android:padding="16dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passports"
+                    />
+                <RadioButton android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMS"
+                    />
+            </RadioGroup>
 
         </RelativeLayout>
 
     </LinearLayout>
+
+
 
 </androidx.cardview.widget.CardView>

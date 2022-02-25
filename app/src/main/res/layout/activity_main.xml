@@ -13,4 +13,10 @@
       android:id="@+id/recyclerView"
       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
+  <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    app:icon="@drawable/ic_baseline_attach_email_24"
+      android:id="@+id/iconEmail"/>
+
 </LinearLayout>
